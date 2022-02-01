@@ -1,0 +1,241 @@
+/* Attribute Selectors */
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(19, 14, 14);
+}
+
+nav[class = "navbar"]{
+    background: rgb(238, 184, 7);
+    height:15vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+div[class = "logo"]{
+    width:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img[alt = "web_logo"]{
+    width:80px;
+    border-radius:50px;
+    border:2px solid white;
+    height:80px;
+}
+
+
+ul[rel= "menus"]{
+    display: flex;
+    justify-content:space-around;
+    width:50%;
+    align-items: center;
+}
+
+ul[rel = "menus"] li{
+    list-style-type:none;
+    
+} 
+
+ul[rel = "menus"] li a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+} 
+
+a[rel = "home"]{
+    font-weight: bold;
+    font-size:22px !important;
+}
+
+div[rel = "more_info"]{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+span[rel ="info"]{
+    color:white;
+    font-size: 20px;
+    background-color: rgb(19, 14, 14);
+    padding:19px;
+    border-radius: 30px;
+}
+
+a[rel = "info_a"]{
+    text-decoration: none;
+}
+
+div[rel = "humbarger"]{
+    width:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+div[rel = "humbarger"] i{
+    color:black;
+    font-size:30px;
+}
+
+/* the main section code */
+/* more Attribute selectors */
+
+div[class = "firstbox"]{
+    display: flex;
+    width:90%;
+    margin: 60px auto;
+    justify-content: space-around;
+}
+
+div[id *= "fbox"]{
+   width:50%;
+   height:50vh;
+
+   
+}
+
+div[id = "fbox_1"]{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+img[alt="img2"]{
+    border-radius:150px;
+    border:5px solid white;
+
+
+}
+
+h1[rel = "fbox_2_h1"]{
+    color:rgb(238, 184, 7);;
+    text-align: center;
+    padding:50px 0 0 0;
+}
+
+p[rel = "fbox_2_p"]{
+    color:white;
+    font-size:1.4rem;
+    text-align: justify;
+    padding:20px 30px 0 30px;
+    text-indent:3em;
+    letter-spacing:1px;
+    line-height:1.4em;
+}
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width:1063px){
+    
+    p[rel = "fbox_2_p"]{
+        color:white;
+        font-size:1.2rem;
+        text-align: justify;
+        padding:40px 30px 0 30px;
+    }
+    h1[rel = "fbox_2_h1"]{
+        font-size:1.7rem;
+    }
+    
+}
+
+
+/* width is 798 px */
+@media screen and (max-width:798px) {
+
+    span[rel ="info"]{
+        padding:15px;
+    }
+
+    ul[rel= "menus"]{
+        display:none;
+    }
+
+    div[rel = "humbarger"]{
+        display:flex;
+    }
+    
+}
+
+@media screen and (max-width:446px) {
+    div[rel = "more_info"]{
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width:738px) {
+    div[class = "firstbox"]{
+        flex-direction: column;
+    }
+    
+    div[id *= "fbox"]{
+        width:80%;
+        height:60vh;
+        margin:auto;
+     
+    }
+}
+
+@media screen and (max-width:798px) {
+    div[class = "logo"]{
+        width:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+
+    div[rel = "more_info"]{
+        width:25%;
+        
+    }
+}
+
+
+
+
+@media screen and (max-width:768px){
+    
+    p[rel = "fbox_2_p"]{
+        color:white;
+        font-size:1.2rem;
+        text-align: justify;
+        padding:10px 30px 0 30px;
+    }
+    h1[rel = "fbox_2_h1"]{
+        font-size:1.7rem;
+    }
+    
+}
+
+/* media query for screen width375px */
+@media screen and (max-width:375px) {
+    p[rel = "fbox_2_p"]{
+        font-size:1.0rem;
+        padding:10px 20px 0 20px;
+        word-spacing:2px;
+        line-height:23px;
+    }
+
+    img[alt="img2"]{
+        width:250px;
+        height:250px;
+    }
+}
+
+
